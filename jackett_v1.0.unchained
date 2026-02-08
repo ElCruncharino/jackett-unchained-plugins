@@ -90,21 +90,6 @@
           }
         ]
       },
-      "torrents": {
-        "regex_use": "first",
-        "regexps": [
-          {
-            "regex": "enclosure[^>]+url=\"(https?://[^\"]+)\"",
-            "group": 1,
-            "slug_type": "complete"
-          },
-          {
-            "regex": "<link>\\s*(https?://[^<\\s]+)",
-            "group": 1,
-            "slug_type": "complete"
-          }
-        ]
-      },
       "details": {
         "regex_use": "first",
         "regexps": [
