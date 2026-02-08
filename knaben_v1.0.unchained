@@ -44,7 +44,7 @@
             "slug_type": "complete"
           },
           {
-            "regex": "<link>(magnet:[^<]+)",
+            "regex": "<link>\\s*(magnet:[^<\\s]+)",
             "group": 1,
             "slug_type": "complete"
           }
@@ -54,7 +54,7 @@
         "regex_use": "first",
         "regexps": [
           {
-            "regex": "<torznab:attr\\s+name=\"seeders\"\\s+value=\"(\\d+)\"\\s*/>",
+            "regex": "name=\"seeders\"\\s+value=\"(\\d+)\"",
             "group": 1,
             "slug_type": "complete"
           }
@@ -64,12 +64,12 @@
         "regex_use": "first",
         "regexps": [
           {
-            "regex": "<torznab:attr\\s+name=\"leechers\"\\s+value=\"(\\d+)\"\\s*/>",
+            "regex": "name=\"leechers\"\\s+value=\"(\\d+)\"",
             "group": 1,
             "slug_type": "complete"
           },
           {
-            "regex": "<torznab:attr\\s+name=\"peers\"\\s+value=\"(\\d+)\"\\s*/>",
+            "regex": "name=\"peers\"\\s+value=\"(\\d+)\"",
             "group": 1,
             "slug_type": "complete"
           }
@@ -84,7 +84,7 @@
             "slug_type": "complete"
           },
           {
-            "regex": "<torznab:attr\\s+name=\"size\"\\s+value=\"(\\d+)\"\\s*/>",
+            "regex": "name=\"size\"\\s+value=\"(\\d+)\"",
             "group": 1,
             "slug_type": "complete"
           }
@@ -94,12 +94,12 @@
         "regex_use": "first",
         "regexps": [
           {
-            "regex": "<link>(https?://[^<]+)",
+            "regex": "enclosure[^>]+url=\"(https?://[^\"]+)\"",
             "group": 1,
             "slug_type": "complete"
           },
           {
-            "regex": "<enclosure\\s+url=\"(https?://[^\"]+)\"",
+            "regex": "<link>\\s*(https?://[^<\\s]+)",
             "group": 1,
             "slug_type": "complete"
           }
