@@ -1,0 +1,41 @@
+{
+  "repository_version": 1.0,
+  "name": "ElCruncharino Plugin Repository",
+  "description": "Repository containing ElCruncharino's jackett plugin.",
+  "author": "ElCruncharino",
+  "plugins": [
+    {
+      "id": "jackett",
+      "disabled": false,
+      "versions": [
+        {
+          "plugin": 1.0,
+          "engine": 2.6,
+          "link": "https://raw.githubusercontent.com/ElCruncharino/jackett-unchained-plugins/main/jackett_v1.0.unchained"
+        }
+      ]
+    },
+    {
+      "id": "knaben",
+      "disabled": false,
+      "versions": [
+        {
+          "plugin": 1.0,
+          "engine": 2.6,
+          "link": "https://raw.githubusercontent.com/ElCruncharino/jackett-unchained-plugins/main/knaben_v1.0.unchained"
+        }
+      ]
+    },
+    {
+      "id": "rutracker",
+      "disabled": false,
+      "versions": [
+        {
+          "plugin": 1.0,
+          "engine": 2.6,
+          "link": "https://raw.githubusercontent.com/ElCruncharino/jackett-unchained-plugins/main/rutracker_v1.0.unchained"
+        }
+      ]
+    }
+  ]
+}
